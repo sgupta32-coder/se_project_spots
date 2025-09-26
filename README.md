@@ -1,21 +1,47 @@
 # Project 3: Spots
 
-### Overview  
+### Overview
 
-* Intro  
-* Figma  
-* Images  
-  
+- Intro
+- Technology used
+- Tech stack
+- Images
+- Video
+- Deployment
+
 **Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+
+This project is about a website where people can share pictures in an interactive way. This website gives them the opportunity and functionality to create their own profiles and sharing picture posts under that profile like their own digital photo library but only more shareable.
+
+**Technology used**
+
+- Figma
+  Figma was used to design the project templates and elements and to source images used in the project .
+- [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
+
+- Visual Studio
+  Visual studio was used to write the code for the project using all the css principles learned so far including, block, flexbox, grid layout and a more streamlined structure of css rules in different files linked to a common folder in root directry.
+
+- Gitbash
+  We used gitbash to initialize git files for any changes to be saved in out git repostory and push the code to our online repository.
+
+**Tech stack**
+
+- HTML
+- CSS
+- Responsive Design
+- Flexbox
+- Grid
+- Media queries
+
+**Images**
+
+As you can see in the pictures, we have made our design responsive with the use of media queries accounting for different resolution size screens.
+
+**Video**
+link: https://drive.google.com/file/d/1H9uWyqxJmM--Rp2Sfs66QL-J2vaZ34-K/view?usp=sharing
+
+**Deployment**
+This page is deployed using Github Pages.
+
+Deployment link:
