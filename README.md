@@ -44,4 +44,4 @@ link: https://drive.google.com/file/d/1H9uWyqxJmM--Rp2Sfs66QL-J2vaZ34-K/view?usp
 **Deployment**
 This page is deployed using Github Pages.
 
-Deployment link:
+Deployment link: https://sgupta32-coder.github.io/se_project_spots/
