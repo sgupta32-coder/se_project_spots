@@ -1,7 +1,11 @@
+.footer {
+  padding: 60px;
+}
+
 .footer__copyright {
-  width: 104px;
-  height: 16px;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   padding: 16px 8px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 400;
