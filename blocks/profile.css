@@ -31,10 +31,12 @@
   background: none;
   border: none;
   padding: 0;
+  gap: 8px;
 }
 
 .profile__edit-btn:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
 .profile__name {
@@ -65,6 +67,9 @@
 
 .profile__add-btn {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
   width: 149px;
   height: 52px;
@@ -79,6 +84,7 @@
 
 .profile__add-btn:hover {
   opacity: 0.8;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 627px) {
