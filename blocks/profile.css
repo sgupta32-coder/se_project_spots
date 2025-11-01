@@ -80,6 +80,7 @@
   color: #fcf5e5;
   align-items: flex-start;
   align-self: flex-end;
+  border: none;
 }
 
 .profile__add-btn:hover {

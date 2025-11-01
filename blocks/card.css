@@ -40,3 +40,10 @@
   justify-content: space-between;
   margin-top: 12px;
 }
+
+@media screen and (max-width: 627px) {
+  .card__title {
+    font-size: 16px;
+    max-width: 235px;
+  }
+}
