@@ -1,7 +1,9 @@
 .modal {
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+  transition:
+    visibility 0s linear 0.5s,
+    opacity 0.5s linear;
   background-color: #00000080;
   position: fixed;
   top: 0;
@@ -22,6 +24,7 @@
 
 .modal__container {
   max-width: 730px;
+  box-sizing: border-box;
   width: 100%;
   border-radius: 8px;
   background-color: #fff;
@@ -36,18 +39,32 @@
   width: 40px;
   height: 40px;
   color: #212121;
-  opacity: 0.4;
+  cursor: pointer;
+  background-image: url(../images/close-x-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   border: none;
+}
+
+.modal__close-btn:hover {
+  opacity: 0.4;
+}
+
+.modal__close-btn:focus {
+  outline: 3px solid #007bff;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.3);
 }
 
 .modal__title {
   margin: 0 0 32px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
-  font-style: medium;
+  font-style: normal;
   font-size: 32px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 
 .modal__form {
@@ -60,40 +77,34 @@
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 16px;
-  font-style: medium;
+  font-style: normal;
   line-height: 110%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 
 .modal__input {
   display: block;
   margin: 8px 0 0;
+  padding: 16px 12px;
   width: 100%;
   height: 52px;
   border-radius: 8px;
-  radius: 1px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
-  font-style: medium;
+  font-style: normal;
   font-size: 20px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 
 .modal__input::placeholder {
-  display: flex;
   color: #212121;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-right: 12px;
-  padding-left: 12px;
-  gap: 10px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
-  font-style: medium;
+  font-style: normal;
   font-size: 20px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   opacity: 0.3;
 }
 
@@ -113,27 +124,23 @@
   justify-content: center;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
-  font-style: medium;
+  font-style: normal;
   font-size: 16px;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
+.modal__submit-btn:hover {
+  opacity: 0.9;
+}
+
+.modal__submit-btn:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
 }
 
 @media screen and (max-width: 320px) {
-  .modal {
-    visibility: hidden;
-    background-color: #00000080;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-  }
-
   .modal_is-opened {
     visibility: visible;
   }
@@ -145,7 +152,7 @@
     max-height: 336px;
     height: 100%;
     margin-top: 134px;
-    margin-left: 10px;
+    box-sizing: border-box;
     border-radius: 8px;
     padding: 12px;
     gap: 24px;
@@ -158,10 +165,10 @@
     color: #212121;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 500;
-    font-style: medium;
+    font-style: normal;
     font-size: 20px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
   }
   .modal__form {
     display: flex;
@@ -173,40 +180,34 @@
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 16px;
-    font-style: medium;
+    font-style: normal;
     line-height: 110%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
   }
 
   .modal__input {
     display: block;
     margin: 8px 0 0;
+    padding: 16px 12px;
     width: 100%;
     height: 52px;
     border-radius: 8px;
-    radius: 1px;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 500;
-    font-style: medium;
+    font-style: normal;
     font-size: 20px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
   }
 
   .modal__input::placeholder {
-    display: flex;
     color: #212121;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-right: 12px;
-    padding-left: 12px;
-    gap: 10px;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 500;
-    font-style: medium;
+    font-style: normal;
     font-size: 20px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     opacity: 0.3;
   }
 
@@ -226,9 +227,9 @@
     justify-content: center;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-weight: 500;
-    font-style: medium;
+    font-style: normal;
     font-size: 16px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
   }
 }

@@ -11,13 +11,13 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  max-width: 250px;
+  max-width: 353px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
-  font-style: medium;
+  font-style: normal;
   font-size: 20px;
   line-height: 120%;
-  letter-spacing: 0%;
+  letter-spacing: normal;
 }
 
 .card__like-btn {
