@@ -68,7 +68,7 @@
 .profile__add-btn {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-self: end;
   justify-content: center;
   margin-left: auto;
   width: 149px;

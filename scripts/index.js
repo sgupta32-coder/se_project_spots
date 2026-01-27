@@ -58,6 +58,8 @@ function handleAddCardSubmit(evt) {
   evt.preventDefault();
   console.log(captionInput.value);
   console.log(linkInput.value);
+
+  addCardFormElemet.reset();
   closeModal(addProfileModal);
 }
 
