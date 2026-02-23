@@ -123,6 +123,45 @@
           </form>
         </div>
       </div>
+      <div class="modal" id="new-post-modal">
+        <div class="modal__content">
+          <button
+            aria-label="Close modal"
+            class="modal__close"
+            type="button"
+          ></button>
+          <h3 class="modal__title">New post</h3>
+          <form class="modal__form" id="card-form">
+            <label class="modal__label" for="card-link-input">
+              Image link
+              <input
+                id="card-link-input"
+                class="modal__input"
+                name="description"
+                placeholder="Paste a link to the picture"
+                required
+                type="url"
+              />
+              <span class="modal__error" id="card-link-input-error"></span>
+            </label>
+            <label class="modal__label" for="card-caption-input">
+              Caption
+              <input
+                id="card-caption-input"
+                class="modal__input"
+                name="caption"
+                placeholder="Type your caption"
+                type="text"
+                minlength="2"
+                maxlength="200"
+                required
+              />
+              <span class="modal__error" id="card-caption-input-error"></span>
+            </label>
+            <button class="modal__button" type="submit">Save</button>
+          </form>
+        </div>
+      </div>
       <div class="modal modal_type_preview modal_is-opened" id="preview-modal">
         <div class="modal__image-container">
           <button

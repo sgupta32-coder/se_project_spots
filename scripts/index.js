@@ -41,8 +41,7 @@ const editProfileModalCloseBtn =
   editProfileModal.querySelector(".modal__close-btn");
 const addProfileBtn = document.querySelector(".profile__add-btn");
 const addProfileModal = document.querySelector("#new-post-modal");
-const addProfileModalCloseBtn =
-  addProfileModal.querySelector(".modal__close-btn");
+const addProfileModalCloseBtn = addProfileModal.querySelector(".modal__close");
 const editProfileForm = editProfileModal.querySelector(".modal__form");
 const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
