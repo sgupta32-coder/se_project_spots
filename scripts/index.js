@@ -45,14 +45,14 @@ const addProfileModalCloseBtn = addProfileModal.querySelector(".modal__close");
 const editProfileForm = editProfileModal.querySelector(".modal__form");
 const profileNameEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
-const addCardFormElemet = addProfileModal.querySelector(".modal__form");
-const captionInput = addProfileModal.querySelector("#post-caption-input");
-const linkInput = addProfileModal.querySelector("#card-image-input");
+const addCardFormElement = addProfileModal.querySelector(".modal__form");
+const captionInput = addProfileModal.querySelector("#card-caption-input");
+const linkInput = addProfileModal.querySelector("#card-link-input");
 
 const previewModal = document.querySelector("#preview-modal");
 const previewModalCloseBtn = previewModal.querySelector(".modal__close-btn");
 const previewImageEl = previewModal.querySelector(".modal__image");
-const previewcaptionEl = previewModal.querySelector(".modal__caption");
+const previewCaptionEl = previewModal.querySelector(".modal__caption");
 
 const cardTemplate = document.querySelector("#card-template");
 const cardsList = document.querySelector(".cards__list");
@@ -76,7 +76,6 @@ function getCardElement(data) {
   const cardDeleteBtnEl = cardElement.querySelector(".card__delete-btn");
   cardDeleteBtnEl.addEventListener("click", () => {
     cardElement.remove();
-    cardElement = null;
   });
 
   cardImageEl.addEventListener("click", () => {
@@ -128,7 +127,7 @@ function handleEditProfileSubmit(evt) {
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 
-addCardFormElemet.addEventListener("Submit", function (evt) {
+addCardFormElemet.addEventListener("submit", function (evt) {
   evt.preventDefault();
   console.log(captionInput.value);
   console.log(linkInput.value);
@@ -140,7 +139,7 @@ addCardFormElemet.addEventListener("Submit", function (evt) {
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
 
-  addCardModal.classList.remove("modal_is-opened");
+  closeModal(addProfileModal);
 });
 
 initialCards.forEach(function (item) {

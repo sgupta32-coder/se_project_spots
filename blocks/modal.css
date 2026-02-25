@@ -90,8 +90,6 @@
 
 .modal__close:hover {
   background-image: url(../images/x-close\ hover.svg);
-  height: 40px;
-  width: 40px;
 }
 
 .modal__title {
@@ -182,17 +180,13 @@
 }
 
 .modal__caption {
-  display: flex;
-  color: white;
-  flex-flow: row;
-  width: 214px;
-  height: 32px;
-  top: 750px;
-  left: 223px;
-  border-radius: 8px;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 10px);
   padding: 4px 8px;
+  max-width: 90vw;
+  border-radius: 8px;
   background-color: #212121;
-  align-items: center;
 }
 
 .modal__submit-btn:focus {
