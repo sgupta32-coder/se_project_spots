@@ -30,9 +30,10 @@
   max-width: 730px;
   box-sizing: border-box;
   width: 100%;
-  border-radius: 8px;
-  padding: 32px 50px;
+  border-radius: 10px;
+  padding: 36px 50px 32px;
   position: relative;
+  background-color: #fff;
 }
 
 .modal__close-btn {
@@ -69,6 +70,28 @@
 
 .modal__close-btn_type_preview:hover {
   background-image: url(../images/close\ preview\ button\ hover.svg);
+}
+
+.modal__close {
+  background-image: url(../images/x-close\ default.svg);
+  height: 40px;
+  width: 40px;
+  opacity: 0.4;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 16px 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+}
+
+.modal__close:hover {
+  background-image: url(../images/x-close\ hover.svg);
+  height: 40px;
+  width: 40px;
 }
 
 .modal__title {
