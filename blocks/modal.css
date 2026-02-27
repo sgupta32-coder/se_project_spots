@@ -39,7 +39,7 @@
 .modal__close-btn {
   position: absolute;
   top: 32px;
-  right: 50px;
+  right: 5%;
   width: 40px;
   height: 40px;
   color: #212121;
@@ -181,6 +181,7 @@
 
 .modal__caption {
   position: absolute;
+  color: #fff;
   left: 0;
   top: calc(100% + 10px);
   padding: 4px 8px;
