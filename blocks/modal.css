@@ -44,7 +44,7 @@
   height: 40px;
   color: #212121;
   cursor: pointer;
-  background-image: url(../images/close-x-svgrepo-com.svg);
+  background-image: url(../images/x-close\ default.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -70,22 +70,6 @@
 
 .modal__close-btn_type_preview:hover {
   background-image: url(../images/close\ preview\ button\ hover.svg);
-}
-
-.modal__close {
-  background-image: url(../images/x-close\ default.svg);
-  height: 40px;
-  width: 40px;
-  opacity: 0.4;
-  border-radius: 8px;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  padding: 16px 8px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  position: relative;
 }
 
 .modal__close:hover {
