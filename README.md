@@ -48,5 +48,6 @@ Check out these videos, where I describe my project
 and some challenges I faced while building it:
 
 Spots project video: https://drive.google.com/file/d/1H9uWyqxJmM--Rp2Sfs66QL-J2vaZ34-K/view?usp=sharing
+
 Spots Project Pitch Video: https://drive.google.com/file/d/1RiJHbZY4d94fruaazQGoh1TgE2szxW1K/view?usp=drive_link
 
