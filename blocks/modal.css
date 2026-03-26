@@ -114,6 +114,10 @@
   color: #212121;
 }
 
+.modal__input_type_error {
+  border: 1px solid rgba(255, 0, 0, 0.6);
+}
+
 .modal__input::placeholder {
   color: #212121;
   font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -164,6 +168,17 @@
 
 .modal__submit-btn:hover {
   opacity: 0.9;
+}
+
+.modal__submit-btn_disabled {
+  flex-flow: row;
+  display: flex;
+  width: 156px;
+  height: 52px;
+  border-radius: 8px;
+  padding: 18px 32px;
+  gap: 8px;
+  opacity: 0.5;
 }
 
 .modal__image {
