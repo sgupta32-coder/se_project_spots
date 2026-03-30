@@ -38,10 +38,16 @@ This project is about a website where people can share pictures in an interactiv
 
 As you can see in the pictures, we have made our design responsive with the use of media queries accounting for different resolution size screens.
 
-**Video**
-link: https://drive.google.com/file/d/1H9uWyqxJmM--Rp2Sfs66QL-J2vaZ34-K/view?usp=sharing
-
 **Deployment**
 This page is deployed using Github Pages.
 
 Deployment link: https://sgupta32-coder.github.io/se_project_spots/
+
+**Project Pitch Videos**
+Check out these videos, where I describe my project
+and some challenges I faced while building it:
+
+Spots project video: https://drive.google.com/file/d/1H9uWyqxJmM--Rp2Sfs66QL-J2vaZ34-K/view?usp=sharing
+
+Spots Project Pitch Video: https://drive.google.com/file/d/1RiJHbZY4d94fruaazQGoh1TgE2szxW1K/view?usp=drive_link
+
