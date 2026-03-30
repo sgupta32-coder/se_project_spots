@@ -1,3 +1,11 @@
+const settings = {
+  formSelector: ".modal__form",
+  inputSelector: ".modal__input",
+  submitButtonSelector: ".modal__submit-btn",
+  inactiveButtonClass: "modal__submit-btn_disabled",
+  inputErrorClass: "modal__input_type_error",
+  errorClass: "modal__error",
+};
 const initialCards = [
   {
     name: "Golden Gate Bridge",
@@ -54,7 +62,9 @@ const previewModal = document.querySelector("#preview-modal");
 const previewModalCloseBtn = previewModal.querySelector(".modal__close-btn");
 const previewImageEl = previewModal.querySelector(".modal__image");
 const previewCaptionEl = previewModal.querySelector(".modal__caption");
-const cardSubmitButton = addProfileModal.querySelector(".modal__button");
+const cardSubmitButton = addProfileModal.querySelector(
+  settings.submitButtonSelector,
+);
 
 const cardTemplate = document.querySelector("#card-template");
 const cardsList = document.querySelector(".cards__list");
@@ -90,13 +100,36 @@ function getCardElement(data) {
   return cardElement;
 }
 
+function handleEscape(evt) {
+  if (evt.key === "Escape") {
+    const opened = document.querySelector(".modal_is-opened");
+    if (opened) closeModal(opened);
+  }
+}
+
 function openModal(modal) {
+  document.addEventListener("keydown", handleEscape);
   modal.classList.add("modal_is-opened");
 }
 
 function closeModal(modal) {
+  document.removeEventListener("keydown", handleEscape);
   modal.classList.remove("modal_is-opened");
 }
+
+function handleOverlay(evt) {
+  if (evt.target.classList.contains("modal")) {
+    closeModal();
+  }
+}
+
+const modalContainer = Array.from(
+  document.querySelectorAll(".modal__container"),
+);
+
+modalContainer.forEach((modal) => {
+  modal.addEventListener("click", handleOverlay);
+});
 
 editProfileBtn.addEventListener("click", function () {
   editProfileNameInput.value = profileNameEl.textContent;
@@ -129,7 +162,6 @@ function handleEditProfileSubmit(evt) {
   profileNameEl.textContent = editProfileNameInput.value;
   profileDescriptionEl.textContent = editProfileDescriptionInput.value;
   evt.target.reset();
-  disableButton(cardSubmitButton, settings);
   closeModal(editProfileModal);
 }
 

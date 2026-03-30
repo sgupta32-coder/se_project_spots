@@ -72,7 +72,7 @@
   background-image: url(../images/close\ preview\ button\ hover.svg);
 }
 
-.modal__close:hover {
+.modal__close-btn:hover {
   background-image: url(../images/x-close\ hover.svg);
 }
 
@@ -140,7 +140,7 @@
   letter-spacing: 0;
   opacity: 0.7;
   max-width: 630px;
-  max-width: 18px;
+  max-height: 18px;
 }
 
 .modal__submit-btn {
@@ -171,14 +171,8 @@
 }
 
 .modal__submit-btn_disabled {
-  flex-flow: row;
-  display: flex;
-  width: 156px;
-  height: 52px;
-  border-radius: 8px;
-  padding: 18px 32px;
-  gap: 8px;
   opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .modal__image {
