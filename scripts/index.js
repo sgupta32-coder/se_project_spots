@@ -1,4 +1,5 @@
 const settings = {
+  modalSelector: ".modal",
   formSelector: ".modal__form",
   inputSelector: ".modal__input",
   submitButtonSelector: ".modal__submit-btn",
@@ -119,9 +120,13 @@ function closeModal(modal) {
 
 function handleOverlay(evt) {
   if (evt.target.classList.contains("modal")) {
-    closeModal();
+    closeModal(evt.target);
   }
 }
+
+document.querySelectorAll(settings.modalSelector).forEach((modal) => {
+  modal.addEventListener("click", handleOverlay);
+});
 
 const modalContainer = Array.from(
   document.querySelectorAll(".modal__container"),
@@ -134,10 +139,11 @@ modalContainer.forEach((modal) => {
 editProfileBtn.addEventListener("click", function () {
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileDescriptionInput.value = profileDescriptionEl.textContent;
-  resetValidation(editProfileForm, [
-    editProfileNameInput,
-    editProfileDescriptionInput,
-  ]);
+  resetValidation(
+    editProfileForm,
+    [editProfileNameInput, editProfileDescriptionInput],
+    settings,
+  );
   openModal(editProfileModal);
 });
 
@@ -180,6 +186,8 @@ addCardFormElement.addEventListener("submit", function (evt) {
   cardsList.prepend(cardElement);
 
   closeModal(addProfileModal);
+  addCardFormElement.reset();
+  disableButton(cardSubmitButton, settings);
 });
 
 initialCards.forEach(function (item) {
